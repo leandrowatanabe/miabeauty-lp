@@ -3,28 +3,29 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: #000000;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .container{
-    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 72px;
+    padding: 20px;
 }
 
 .overtitle{
     text-transform: uppercase;
     color: #AF05AA;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1rem;
 
-    padding-top: 96px;
+    padding-top: 28px;
     padding-bottom: 16px;
 }
 
 .title{
-    font-size: 44px;
-    line-height: 56px;
+    font-size: 2rem;
+    line-height: 2rem;
     font-weight: bold;
     padding-bottom: 24px;
 }
@@ -33,7 +34,6 @@ body{
 
 #header-container{
     background-color: #F5EEEE;
-    padding: 32px 0;
 }
 
 .header{
@@ -71,23 +71,16 @@ body{
     background-color: #F5EEEE;
 }
 
-.hero{
-    display: flex;
-    align-items: center;
-}
-
 .hero-text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 28px 0;
 }
 
 .hero-title{
     color: #0A0A0A;
     font-family: 'Playfair Display';
     font-weight: bold;
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
 }
 
 .hero-subtitle{
@@ -99,6 +92,7 @@ body{
 .hero-button{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 
     text-transform: uppercase;
@@ -107,6 +101,7 @@ body{
     background-color:#EA21A2;
     padding: 20px 40px;
     border-radius: 90px;
+    margin-top: 16px;
 }
 
 .hero-button:hover{
@@ -116,19 +111,14 @@ body{
 
 .hero-img img{
     max-width: 100%;
+    margin-bottom: -20px;
 }
 
 /* SERVICES */
 
-.services{
-    margin-bottom: 48px;
-}
 
 .services-cards{
-    display: flex;
-    gap: 32px;
     width: 100%;
-    padding: 48px 0;
 }
 
 .services-card img{
@@ -153,6 +143,7 @@ body{
 .services-card{
     background-color: #F5EEEE;
     border-radius: 32px;
+    margin-bottom: 28px;
 }
 
 
@@ -177,18 +168,12 @@ body{
     color: #FFFFFF;
 }
 
-.logo-socials{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo-copy{    
     font-size: 16px;
     line-height: 24px;
     display: flex;
     flex-direction: column;
-    padding: 48px 0;
+    padding: 28px 0;
 }
 
 .footer-logo{
@@ -198,4 +183,60 @@ body{
 
 .footer-socials a{
     color: #FFFFFF;
+}
+
+
+/* DESKTOP */
+
+@media(min-width: 1024px){
+    .container{
+        max-width: 1280px;
+        padding: 0 72px;
+    }
+
+    .overtitle{
+        padding-top: 96px;
+    }
+
+    #header-container{
+        padding: 32px 0;
+    }
+
+    .hero{
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-img img{
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+    
+
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services{
+        margin-bottom: 48px;
+    }
+
+    .services-cards{
+        display: flex;
+        gap: 32px;
+        padding: 48px 0;
+    }
+
+    .logo-copy{    
+        padding: 48px 0;
+    }
+
+    .logo-socials{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
 }
